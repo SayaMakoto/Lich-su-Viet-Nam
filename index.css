@@ -5,6 +5,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -56,6 +60,7 @@ nav a.active {
 }
 
 main {
+    flex: 1;
     padding: 30px;
     background-color: white;
     width: 80%;
