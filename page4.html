@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch sử Việt Nam</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/page4.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="../images/icon.png" alt="Logo">
+            <span>Lịch sử Việt Nam</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Khởi Của Lịch Sử</a></li>
+                <li><a href="page2.html">Thời Phong Kiến</a></li>
+                <li><a href="page3.html">Thời Pháp Thuộc</a></li>
+                <li><a href="page4.html"  class="active">Kháng Chiến</a></li>
+                <li><a href="page5.html">Hiện Đại</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Hai Cuộc Kháng Chiến Chống Pháp và Chống Mỹ</h1>
+
+    <section>
+        <h2>I. Kháng Chiến Chống Thực Dân Pháp (1945–1954)</h2>
+
+        <h3>1. Bối cảnh</h3>
+        <p>Sau Cách mạng Tháng Tám, Pháp quay lại xâm lược Việt Nam. Ngày 19/12/1946, toàn quốc kháng chiến bắt đầu.</p>
+
+        <h3>2. Diễn biến chính</h3>
+        <ul>
+            <li><strong>1946–1949:</strong> Kháng chiến lâu dài, xây dựng căn cứ.</li>
+            <li><strong>1950–1953:</strong> Mở các chiến dịch lớn, bước sang tiến công chiến lược.</li>
+            <li><strong>1954:</strong> Chiến dịch Điện Biên Phủ – thắng lợi quyết định.</li>
+        </ul>
+
+        <h3>3. Kết quả và ý nghĩa</h3>
+        <ul>
+            <li>Hiệp định Genève: Pháp rút quân, Việt Nam tạm thời chia cắt.</li>
+            <li>Chấm dứt 87 năm đô hộ của thực dân Pháp.</li>
+            <li>Chiến thắng Điện Biên Phủ cổ vũ phong trào giải phóng dân tộc trên toàn thế giới.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>II. Kháng Chiến Chống Đế Quốc Mỹ (1954–1975)</h2>
+
+        <h3>1. Bối cảnh</h3>
+        <p>Sau khi Pháp rút, Mỹ dựng chính quyền Sài Gòn, can thiệp và biến miền Nam thành căn cứ chống phá cách mạng.
+        </p>
+
+        <h3>2. Diễn biến chính</h3>
+        <ul>
+            <li><strong>1954–1960:</strong> Đấu tranh chính trị hòa bình.</li>
+            <li><strong>1960–1968:</strong> Kháng chiến vũ trang, nổi bật là Tết Mậu Thân.</li>
+            <li><strong>1969–1973:</strong> Mỹ rút quân, ký Hiệp định Paris.</li>
+            <li><strong>1975:</strong> Tổng tiến công mùa Xuân – Giải phóng miền Nam.</li>
+        </ul>
+
+        <h3>3. Kết quả và ý nghĩa</h3>
+        <ul>
+            <li>Thống nhất hoàn toàn đất nước.</li>
+            <li>Chấm dứt chiến tranh, mở ra kỷ nguyên độc lập và toàn vẹn lãnh thổ.</li>
+            <li>Là chiến thắng vĩ đại trong lịch sử hiện đại Việt Nam.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>III. So sánh tổng quát</h2>
+        <table>
+            <tr>
+                <th>Cuộc kháng chiến</th>
+                <th>Thời gian</th>
+                <th>Kết quả chính</th>
+                <th>Ý nghĩa</th>
+            </tr>
+            <tr>
+                <td>Chống Pháp</td>
+                <td>1945–1954</td>
+                <td>Hiệp định Genève – Pháp rút</td>
+                <td>Mở đầu thời kỳ giành độc lập</td>
+            </tr>
+            <tr>
+                <td>Chống Mỹ</td>
+                <td>1954–1975</td>
+                <td>Thống nhất đất nước</td>
+                <td>Hoàn thành sự nghiệp giải phóng dân tộc</td>
+            </tr>
+        </table>
+    </section>
+<button onclick="goBack()" class="back-button">← Quay lại</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <button onclick="scrollToTop()" id="topBtn" title="Lên đầu trang">↑</button>
+    <script>
+        window.onscroll = function () {
+            const btn = document.getElementById("topBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <footer>
+        <p>© 2025 Lịch sử Việt Nam</p>
+    </footer>
+</body>
+
+</html>

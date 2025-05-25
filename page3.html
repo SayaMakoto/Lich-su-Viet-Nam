@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch sử Việt Nam</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/page3.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="../images/icon.png" alt="Logo">
+            <span>Lịch sử Việt Nam</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Khởi Của Lịch Sử</a></li>
+                <li><a href="page2.html">Thời Phong Kiến</a></li>
+                <li><a href="page3.html" class="active">Thời Pháp Thuộc</a></li>
+                <li><a href="page4.html">Kháng Chiến</a></li>
+                <li><a href="page5.html">Hiện Đại</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Thời kỳ Thực dân Pháp Đô Hộ Việt Nam (1858 – 1945)</h1>
+
+    <section>
+        <h2>1. Bối cảnh trước khi bị đô hộ</h2>
+        <p>Đầu thế kỷ 19, triều Nguyễn thực hiện chính sách bế quan tỏa cảng. Trong khi đó, thực dân Pháp lợi dụng cớ
+            truyền đạo để can thiệp vào Việt Nam, chuẩn bị cho quá trình xâm lược.</p>
+    </section>
+
+    <section>
+        <h2>2. Quá trình xâm lược (1858 – 1884)</h2>
+        <h3>Giai đoạn 1: Xâm lược miền Nam</h3>
+        <ul>
+            <li>1858: Pháp đánh Đà Nẵng.</li>
+            <li>1862: Nhà Nguyễn ký Hòa ước Nhâm Tuất, mất 3 tỉnh miền Đông Nam Kỳ.</li>
+            <li>1867: Pháp chiếm nốt 3 tỉnh miền Tây Nam Kỳ.</li>
+        </ul>
+        <h3>Giai đoạn 2: Chiếm Bắc & Trung Kỳ</h3>
+        <ul>
+            <li>1873, 1882: Hà Nội thất thủ 2 lần.</li>
+            <li>1884: Hòa ước Patenôtre – Việt Nam chính thức bị đặt dưới ách bảo hộ của Pháp.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Bộ máy cai trị và chính sách thực dân</h2>
+        <h3>Bộ máy cai trị</h3>
+        <p>Pháp lập Toàn quyền Đông Dương, chia nước thành xứ bảo hộ (Trung, Bắc) và thuộc địa (Nam).</p>
+        <h3>Chính sách bóc lột</h3>
+        <ul>
+            <li>Cướp đất, lập đồn điền.</li>
+            <li>Áp thuế nặng, độc quyền muối, rượu, thuốc phiện.</li>
+            <li>Phát triển giao thông để phục vụ khai thác.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Các phong trào kháng chiến</h2>
+        <h3>Cuối thế kỷ 19</h3>
+        <p>Phong trào Cần Vương với các lãnh tụ như Phan Đình Phùng, Hoàng Hoa Thám.</p>
+        <h3>Đầu thế kỷ 20</h3>
+        <p>Phong trào Đông Du, Đông Kinh Nghĩa Thục, Duy Tân.</p>
+        <h3>Từ 1930</h3>
+        <p>Phong trào Xô viết Nghệ – Tĩnh, dân chủ 1936–1939, giải phóng dân tộc do Đảng Cộng sản Việt Nam lãnh đạo.</p>
+    </section>
+
+    <section>
+        <h2>5. Kết thúc thời kỳ đô hộ</h2>
+        <p>1945: Sau cách mạng Tháng Tám, Chủ tịch Hồ Chí Minh tuyên bố độc lập, chấm dứt 87 năm đô hộ của Pháp.</p>
+    </section>
+    <button onclick="goBack()" class="back-button">← Quay lại</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <button onclick="scrollToTop()" id="topBtn" title="Lên đầu trang">↑</button>
+    <script>
+        window.onscroll = function () {
+            const btn = document.getElementById("topBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <footer>
+        <p>© 2025 Lịch sử Việt Nam</p>
+    </footer>
+</body>
+
+</html>
