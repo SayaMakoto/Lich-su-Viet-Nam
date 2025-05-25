@@ -15,12 +15,13 @@ body {
 }
 
 header {
+    padding: 15px 10px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #0f3057;
     color: white;
-    padding: 10px 30px;
 }
 
 .logo {
@@ -43,9 +44,10 @@ nav ul {
 }
 
 nav a {
+    padding: 10px 14px;
+    font-size: 16px;
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
 }
 
 nav a:hover {
@@ -74,8 +76,9 @@ section {
 }
 
 footer {
+    padding: 15px 10px;
+    font-size: 16px;
     text-align: center;
-    padding: 20px;
     background-color: #0f3057;
     color: white;
 }
